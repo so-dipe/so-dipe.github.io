@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fdfdfd;
+    color: #000;
+    padding: 20px 0;
+    position: relative;
+}
+
+#main-section {
+    text-align: center;
+    margin: 10vh auto;
+    width: 50%;
+}
+
+#main-section img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.section-style {
+    margin: 50px 10%;
+    border-top: 2px dashed green;
+    border-bottom: 2px dashed green;
+    padding: 20px;
+}
+
+.section-style h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#resume-section .experience, #resume-section .education {
+    padding: 20px;
+}
+
+
+
+
