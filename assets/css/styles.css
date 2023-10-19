@@ -3,27 +3,40 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    font-family: 'Libre Baskerville', serif;
 }
 
 header {
-    background-color: #fdfdfd;
+    background-color: #eeeded;
     color: #000;
-    padding: 20px 0;
+    padding: 10px 0;
     position: relative;
+}
+
+header.transition {
+    transition: background-color 0.5s, padding 0.5s;
 }
 
 #main-section {
     text-align: center;
-    margin: 10vh auto;
+    margin: 4vh auto;
     width: 50%;
+}
+
+#main-section h2 {
+    font-size: 50px; /* Adjust the font size as needed */
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 #main-section img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    border: 2px dashed green;
+    padding: 0.5%;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     margin-bottom: 20px;
+    transition: all 1s;
 }
 
 nav ul {
@@ -37,22 +50,50 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav ul li a {
+    text-decoration: none;
+}
+
 .section-style {
-    margin: 50px 10%;
-    border-top: 2px dashed green;
+    margin: 50px 20%;
+    margin-top: 0%;
+    border: 2px dashed green;
     border-bottom: 2px dashed green;
     padding: 20px;
 }
 
-.section-style h2 {
-    text-align: center;
-    margin-bottom: 30px;
+.section-head {
+    text-align: left;
+    margin-left: 20%;
 }
 
 #resume-section .experience, #resume-section .education {
     padding: 20px;
 }
 
+#projects-section a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
+}
+
+.project {
+    border-bottom: 2px dashed;
+    border-top: 2px dashed;
+    margin: 10px;
+}
 
 
+footer {
+    background-color: #f1e5c8;
+    color: #3e2723;
+    padding: 20px 10%;
+    margin-top: 50px;
+}
 
+footer .contact-info {
+    margin-top: 20px;
+}
+
+footer .contact-info h3 {
+    color: #3e2723;
+}
