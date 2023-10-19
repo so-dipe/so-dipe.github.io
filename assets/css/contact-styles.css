@@ -19,7 +19,7 @@ header {
     width: 50%;
 }
 
-#main-section img {
+#profile-picture {
     border-radius: 50%;
     border: 2px dashed green;
     padding: 0.5%;
@@ -57,4 +57,17 @@ nav ul li a {
 .contact-container {
     margin-left: 20%;
     margin-right: 20%;
+}
+
+.contact-block {
+    padding: 5px;
+}
+
+.contact-container a, footer a {
+    text-decoration: None;
+    color: #f5d6b4;
+}
+
+.contact-container a:hover, footer a:hover {
+    color: #fff;
 }

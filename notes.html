@@ -11,9 +11,10 @@
 </head>
 
 <body>
+    <script src="assets/js/main.js"></script>
     <header>
         <div id="main-section">
-            <img src="assets/images/profile.png" alt="Profile Picture">
+            <img src="assets/images/profile.png" alt="Profile Picture" id="profile-picture">
             <h2><strong>Sodipe Paul</strong></h2>
             <nav>
                 <ul>
@@ -24,6 +25,11 @@
                     <li><a href="play.html">Play</a></li>
                     <li><a href="notes.html">Notes</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="switch-container">
+                            <img src="assets/images/darkmode.png" alt="Light Mode" class="dark-mode-icon" onclick="toggleDarkMode()">
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
