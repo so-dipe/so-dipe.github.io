@@ -29,3 +29,8 @@ window.addEventListener('scroll', function() {
         content.style.paddingTop = '0';
     }
 });
+
+// Copyright
+const yearElement = document.getElementById('year');
+const currentYear = new Date().getFullYear();
+yearElement.textContent = `&copy; ${currentYear} s-odipe`;
