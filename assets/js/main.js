@@ -1,6 +1,6 @@
 window.addEventListener('scroll', function() {
     var scrollValue = window.scrollY;
-    var img = document.querySelector('#main-section img');
+    var img = document.getElementById('profile-picture');
     var header = document.querySelector('header');
     var content = document.querySelector('body');
 
@@ -30,7 +30,41 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Copyright
-const yearElement = document.getElementById('year');
-const currentYear = new Date().getFullYear();
-yearElement.textContent = `&copy; ${currentYear} s-odipe`;
+function toggleDarkMode() {
+    const body = document.querySelector('body');
+    const header = document.querySelector('header');
+    const mainContent = document.querySelector('.section-style');
+    const footer = document.querySelector('footer');
+
+    body.classList.toggle('dark-mode');
+    header.classList.toggle('dark-mode');
+    // mainContent.classList.toggle('dark-mode');
+    footer.classList.toggle('dark-mode');
+
+    // Storing dark mode preference in localStorage
+    const isDarkMode = body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkMode);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const darkModeIcon = document.querySelector('.dark-mode-icon');
+    let clicked = localStorage.getItem('rotationClicked') === 'true';
+
+    darkModeIcon.addEventListener('click', function() {
+        if (!clicked) {
+            darkModeIcon.classList.add('rotate');
+        } else {
+            darkModeIcon.classList.remove('rotate');
+        }
+        clicked = !clicked;
+        localStorage.setItem('rotationClicked', clicked);
+    });
+
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
+        toggleDarkMode();
+    }
+    if (clicked) {
+        darkModeIcon.classList.add('rotate');
+    }
+});

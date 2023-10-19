@@ -11,9 +11,10 @@
 </head>
 
 <body>
+    <script src="assets/js/main.js"></script>
     <header>
         <div id="main-section">
-            <img src="assets/images/profile.png" alt="Profile Picture">
+            <img src="assets/images/profile.png" alt="Profile Picture" id="profile-picture">
             <h2><strong>Sodipe Paul</strong></h2>
             <nav>
                 <ul>
@@ -24,6 +25,11 @@
                     <li><a href="play.html">Play</a></li>
                     <li><a href="notes.html">Notes</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="switch-container">
+                            <img src="assets/images/darkmode.png" alt="Light Mode" class="dark-mode-icon" onclick="toggleDarkMode()">
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -33,20 +39,27 @@
         <div class="resume">
             <h2>Sodipe Paul</h2>
             <h3>Machine Learning Engineer</h3>
+            <p id="contact-line">
+                <a href="mailto:sodipepaul@gmail.com">sodipepaul@gmail.com</a> |
+                <a href="https://www.linkedin.com/in/so-dipe">Linkedin</a> |
+                <a href="https://so-dipe.github.io/">Website</a>
+            </p>
         
             <section class="professional-summary">
                 <p>Detail-oriented Machine Learning Engineer with a strong background in mathematics and data analysis. Experienced in developing and deploying machine learning models for various applications.</p>
             </section>
         
             <section class="work-experience">
-                <h3>Work Experience</h4>
-                <p><strong>Machine Learning Engineer - Self Employed</strong> (October 2021 - Present)</p>
+                <h4>WORK EXPERIENCE</h4>
+                <p><strong>Machine Learning Engineer</strong> October 2021 - Present</p>
+                <p>Self Employed</p>
                 <ul>
                     <li>Developing machine learning models for predictive analytics.</li>
                     <li>Implementing natural language processing techniques for text analysis.</li>
                     <li>Collaborating with clients to understand and address their specific business needs.</li>
                 </ul>
-                <p><strong>Data Science Intern - Hamoye</strong> (June 2022 - October 2022)</p>
+                <p><strong>Data Science Intern</strong> June 2022 - October 2022</p>
+                <p>Hamoye</p>
                 <ul>
                     <li>Developing machine learning models for predictive analytics.</li>
                     <li>Implementing natural language processing techniques for text analysis.</li>
@@ -55,13 +68,26 @@
             </section>
         
             <section class="education">
-                <h3>Education</h3>
+                <h4>EDUCATION</h4>
                 <p><strong>B.S. Mathematics</strong> (December 2022)</p>
                 <p>University of Ilorin</p>
+                <ul>
+                    <li>GPA: 4.16/5.0</li>
+                    <li>Voluteer tutor, National Association of Mathematics Students, Unilorin Chapter</li>
+                </ul>
+            </section>
+
+            <section class="certification">
+                <h4>CERTIFICATION</h4>
+                <ul>
+                    <li>IBM Data Science Professional Certificate</li>
+                    <li>Machine Learning Engineering in Producation Certificate - Deep Learning.AI</li>
+                    <li>Tensorflow Developer Certificate - Deep Learning.AI</li>
+                </ul>
             </section>
         
             <section class="skills">
-                <h4>Skills</h4>
+                <h4>SKILLS</h4>
                 <ul>
                     <li>Machine Learning</li>
                     <li>Python</li>
@@ -77,11 +103,15 @@
         <div class="contact-info">
             <h3>Contact</h3>
             <a href="mailto:sodipepaul@gmail.com">
-                <img src="assets/images/mail.png" alt="Mail" width="50" height="50" style="vertical-align: middle;">
+                <img src="assets/images/mail.png" alt="GMail" width="50" height="50" style="vertical-align: middle;">
             </a>
 
             <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
                 <img src="assets/images/linkedin.png" alt="LinkedIn" width="50" height="50" style="vertical-align: middle;">
+            </a>
+
+            <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
+                <img src="assets/images/github.png" alt="GitHub" width="65" height="65" style="vertical-align: middle;">
             </a>
         </div>
         <p>&copy; 2023 sodipe</p>

@@ -11,9 +11,10 @@
 </head>
 
 <body>
+    <script src="assets/js/main.js"></script>
     <header>
         <div id="main-section">
-            <img src="assets/images/profile.png" alt="Profile Picture">
+            <img src="assets/images/profile.png" alt="Profile Picture" id="profile-picture">
             <h2><strong>Sodipe Paul</strong></h2>
             <nav>
                 <ul>
@@ -24,30 +25,69 @@
                     <li><a href="play.html">Play</a></li>
                     <li><a href="notes.html">Notes</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="switch-container">
+                            <img src="assets/images/darkmode.png" alt="Light Mode" class="dark-mode-icon" onclick="toggleDarkMode()">
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <div class="contact-container">
-        <p>If you're here, here's how you can reach me.</p>
-        <div class="contact-block">
-            By Mail. 
-        </div>
-        <div class="contact-block">
-            On Linkedin. 
+        <p>If you want to get in touch, here's how you can reach me.</p>
+        <div class="contact-info">
+            <div class="contact-section">
+                <h2 class="contact-head">
+                    Email 
+                    <img src="assets/images/email.png" alt="Mail" width="50" height="50" style="vertical-align: middle;">
+                </h2>
+                <div class="contact-block">
+                    <p>If you prefer traditional communication, drop me an email at:</p>
+                    <p>
+                        <a href="mailto:sodipepaul@gmail.com">sodipepaul@gmail.com</a>
+                        or
+                        <a href="mailto:paulsodipe@gmail.com">paulsodipe@gmail.com</a>
+                    </p> 
+                </div>
+            </div>
+            <div class="contact-section">
+                <h2 class="contact-head">
+                    Social Media
+                </h2>
+                <div class="contact-block">
+                    <p>Connect with me on social media:</p>
+                    <div class="social-media-icons">
+                        <a href="profile">
+                            <img src="assets/images/github.png" alt="GitHub" width="65" height="65" style="vertical-align: middle;">
+                        </a>
+                        <a href="profile">
+                            <img src="assets/images/twitter.png" alt="Twitter" width="50" height="50" style="vertical-align: middle;">
+                        </a>
+                        <a href="profile">
+                            <img src="assets/images/linkedin.png" alt="LinkedIn" width="50" height="50" style="vertical-align: middle;">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
 
     <footer>
         <div class="contact-info">
             <h3>Contact</h3>
             <a href="mailto:sodipepaul@gmail.com">
-                <img src="assets/images/mail.png" alt="Mail" width="50" height="50" style="vertical-align: middle;">
+                <img src="assets/images/mail.png" alt="GMail" width="50" height="50" style="vertical-align: middle;">
             </a>
 
             <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
                 <img src="assets/images/linkedin.png" alt="LinkedIn" width="50" height="50" style="vertical-align: middle;">
+            </a>
+
+            <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
+                <img src="assets/images/github.png" alt="GitHub" width="65" height="65" style="vertical-align: middle;">
             </a>
         </div>
         <p>&copy; 2023 sodipe</p>

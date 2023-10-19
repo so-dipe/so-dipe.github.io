@@ -13,7 +13,7 @@
     <script src="assets/js/main.js"></script>
     <header>
         <div id="main-section">
-            <img src="assets/images/profile.png" alt="Profile Picture">
+            <img src="assets/images/profile.png" alt="Profile Picture" id="profile-picture">
             <h2><strong>Sodipe Paul</strong></h2>
             <nav>
                 <ul>
@@ -24,6 +24,11 @@
                     <li><a href="play.html">Play</a></li>
                     <li><a href="notes.html">Notes</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="switch-container">
+                            <img src="assets/images/darkmode.png" alt="Light Mode" class="dark-mode-icon" onclick="toggleDarkMode()">
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -96,12 +101,12 @@
     <section id="play-section" class="section-style">
         <div class="activity">
             <h3>Chess</h3>
-            <p>Playing chess online on chess.com and improving strategic skills.</p>
+            <p>I enjoy playing chess on Chess.com, where I'm currently rated in the top 90% of players worldwide...</p>
             <!-- Add more details about your chess activities if necessary. -->
         </div>
         <div class="activity">
-            <h3>Sitcoms</h3>
-            <p>Enjoying sitcoms and relaxing with a good laugh.</p>
+            <h3>Wikipedia</h3>
+            <p>I occasionally edit Wikipedia articles, often focusing on adding citations...</p>
             <!-- Add more details about your favorite sitcoms if necessary. -->
         </div>
     </section>    
@@ -110,13 +115,18 @@
         <div class="contact-info">
             <h3>Contact</h3>
             <a href="mailto:sodipepaul@gmail.com">
-                <img src="assets/images/mail.png" alt="Mail" width="50" height="50" style="vertical-align: middle;">
+                <img src="assets/images/mail.png" alt="GMail" width="50" height="50" style="vertical-align: middle;">
             </a>
+
             <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
                 <img src="assets/images/linkedin.png" alt="LinkedIn" width="50" height="50" style="vertical-align: middle;">
             </a>
+
+            <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
+                <img src="assets/images/github.png" alt="GitHub" width="65" height="65" style="vertical-align: middle;">
+            </a>
         </div>
-        <p id="year">&copy; 2023 sodipe</p>
+        <p>&copy; 2023 sodipe</p>
     </footer>
 </body>
 </html>

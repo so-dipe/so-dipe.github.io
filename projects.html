@@ -12,10 +12,11 @@
 </head>
 
 <body>
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/projects.js"></script>
     <header>
         <div id="main-section">
-            <img src="assets/images/profile.png" alt="Profile Picture">
+            <img src="assets/images/profile.png" alt="Profile Picture" id="profile-picture">
             <h2><strong>Sodipe Paul</strong></h2>
             <nav>
                 <ul>
@@ -26,6 +27,11 @@
                     <li><a href="play.html">Play</a></li>
                     <li><a href="notes.html">Notes</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="switch-container">
+                            <img src="assets/images/darkmode.png" alt="Light Mode" class="dark-mode-icon" onclick="toggleDarkMode()">
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -47,8 +53,8 @@
                 <p>A web application to improve mental math skills.</p>
                 <div class="details" style="display: none;">
                     <p><strong>Motivation:</strong> The app was designed to help users enhance their mental math capabilities through interactive exercises and challenges.</p>
-                    <p><strong>Github Link:</strong> <a href="https://github.com/your-username/mental-math-app" target="_blank">GitHub Repository</a></p>
-                    <p><strong>Project Deployment:</strong> <a href="https://your-website.com/mental-math-app" target="_blank">Project Deployment Link</a></p>
+                    <p><strong>Github:</strong> <a href="https://github.com/so-dipe/MentalMath" target="_blank">GitHub Repository</a></p>
+                    <p><strong>Project Deployment:</strong> <a href="https://mental-math.onrender.com/" target="_blank">Project Deployment Link</a></p>
                     <p><strong>Tech Stack:</strong> 
                         <img src="assets/images/html.png" alt="HTML" width="20" height="20" style="vertical-align: middle;">HTML
                         <img src="assets/images/css.png" alt="CSS" width="20" height="20" style="vertical-align: middle;">CSS
@@ -72,8 +78,8 @@
                 <p>Analyze WhatsApp chat data to extract insights and trends.</p>
                 <div class="details" style="display: none;">
                     <p><strong>Motivation:</strong> The app was designed to help users enhance their mental math capabilities through interactive exercises and challenges.</p>
-                    <p><strong>Github Link:</strong> <a href="https://github.com/your-username/mental-math-app" target="_blank">GitHub Repository</a></p>
-                    <p><strong>Project Deployment:</strong> <a href="https://your-website.com/mental-math-app" target="_blank">Project Deployment Link</a></p>
+                    <p><strong>Github:</strong> <a href="https://github.com/so-dipe/Whatsapp-chat-analyzer" target="_blank">GitHub Repository</a></p>
+                    <p><strong>Project Deployment:</strong> <a href="https://so-dipe-whatsapp-chat-analyzer-appmain-7uov30.streamlit.app/" target="_blank">Project Deployment Link</a></p>
                     <p><strong>Tech Stack:</strong> 
                         <img src="assets/images/flask.png" alt="Flask" width="20" height="20" style="vertical-align: middle;">Streamlit
                         <img src="assets/images/python.png" alt="Python" width="20" height="20" style="vertical-align: middle;">Python
@@ -100,8 +106,8 @@
                 <p>Analyze WhatsApp chat data to extract insights and trends.</p>
                 <div class="details" style="display: none;">
                     <p><strong>Motivation:</strong> The app was designed to help users enhance their mental math capabilities through interactive exercises and challenges.</p>
-                    <p><strong>Github Link:</strong> <a href="https://github.com/your-username/mental-math-app" target="_blank">GitHub Repository</a></p>
-                    <p><strong>Project Deployment:</strong> <a href="https://your-website.com/mental-math-app" target="_blank">Project Deployment Link</a></p>
+                    <p><strong>Github:</strong> <a href="https://github.com/so-dipe/CustomResumeGen" target="_blank">GitHub Repository</a></p>
+                    <p><strong>Project Deployment:</strong> <a href="https://resumegen-swl0.onrender.com/" target="_blank">Project Deployment Link</a></p>
                     <p><strong>Tech Stack:</strong> 
                         <img src="assets/images/html.png" alt="HTML" width="20" height="20" style="vertical-align: middle;">HTML
                         <img src="assets/images/css.png" alt="CSS" width="20" height="20" style="vertical-align: middle;">CSS
@@ -125,8 +131,8 @@
                 <p>Analyze WhatsApp chat data to extract insights and trends.</p>
                 <div class="details" style="display: none;">
                     <p><strong>Motivation:</strong> The app was designed to help users enhance their mental math capabilities through interactive exercises and challenges.</p>
-                    <p><strong>Github Link:</strong> <a href="https://github.com/your-username/mental-math-app" target="_blank">GitHub Repository</a></p>
-                    <p><strong>Project Deployment:</strong> <a href="https://your-website.com/mental-math-app" target="_blank">Project Deployment Link</a></p>
+                    <p><strong>Github:</strong> <a href="https://github.com/so-dipe/SpeechCoach" target="_blank">GitHub Repository</a></p>
+                    <p><strong>Project Deployment:</strong> <a href="---" target="_blank">Project Deployment Link</a></p>
                     <p><strong>Tech Stack:</strong> 
                         <img src="assets/images/flask.png" alt="Flask" width="20" height="20" style="vertical-align: middle;">Telegram API
                         <img src="assets/images/python.png" alt="Python" width="20" height="20" style="vertical-align: middle;">Python
@@ -147,11 +153,13 @@
             <div class="project">
                 <h3>Sentiment Analysis Notebook</h3>
                 <p>Analyze WhatsApp chat data to extract insights and trends.</p>
+                <p><strong>Notebook Link: </strong><a href="notebook">Notebook</a></p>
                 <!-- Add more details about the project, such as the technologies used and any relevant links. -->
             </div>
             <div class="project">
                 <h3>Time Series Analysis of Gun Violence</h3>
                 <p>Analyze WhatsApp chat data to extract insights and trends.</p>
+                <p><strong>Notebook Link: </strong><a href="notebook">Notebook</a></p>
                 <!-- Add more details about the project, such as the technologies used and any relevant links. -->
             </div>
         </div>
@@ -162,11 +170,15 @@
         <div class="contact-info">
             <h3>Contact</h3>
             <a href="mailto:sodipepaul@gmail.com">
-                <img src="assets/images/mail.png" alt="Mail" width="50" height="50" style="vertical-align: middle;">
+                <img src="assets/images/mail.png" alt="GMail" width="50" height="50" style="vertical-align: middle;">
             </a>
 
             <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
                 <img src="assets/images/linkedin.png" alt="LinkedIn" width="50" height="50" style="vertical-align: middle;">
+            </a>
+
+            <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
+                <img src="assets/images/github.png" alt="GitHub" width="65" height="65" style="vertical-align: middle;">
             </a>
         </div>
         <p>&copy; 2023 sodipe</p>

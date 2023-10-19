@@ -19,7 +19,7 @@ header {
     width: 50%;
 }
 
-#main-section img {
+#profile-picture {
     border-radius: 50%;
     border: 2px dashed green;
     padding: 0.5%;
@@ -59,6 +59,15 @@ nav ul li a {
     margin-right: 20%;
 }
 
+.project-container a {
+    color: #f5d6b4;
+}
+
+.project-container a:hover {
+    color: #c27a7a;
+}
+
+
 .project-section {
     border: 2px dashed green;
     margin: 10px;
@@ -68,6 +77,10 @@ nav ul li a {
 .project {
     margin: 15px;
     border: None;
+}
+
+.project:hover{
+    background: #161616;
 }
 
 .dropdown-icon {

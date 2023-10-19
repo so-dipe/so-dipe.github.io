@@ -19,7 +19,7 @@ header {
     width: 50%;
 }
 
-#main-section img {
+#profile-picture {
     border-radius: 50%;
     border: 2px dashed green;
     padding: 0.5%;
@@ -57,4 +57,21 @@ nav ul li a {
 .play-container {
     margin-left: 20%;
     margin-right: 20%;
+    font-size: 20px;
+}
+
+.play-container a {
+    color: #f5d6b4;
+}
+
+.play-container a:hover {
+    color: #c27a7a;
+}
+
+.project-head {
+    border-bottom: 2px dashed #fff;
+}
+
+.play-section p {
+    padding: 10px;
 }

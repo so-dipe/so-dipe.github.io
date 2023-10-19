@@ -11,9 +11,10 @@
 </head>
 
 <body>
+    <script src="assets/js/main.js"></script>
     <header>
         <div id="main-section">
-            <img src="assets/images/profile.png" alt="Profile Picture">
+            <img src="assets/images/profile.png" alt="Profile Picture" id="profile-picture">
             <h2><strong>Sodipe Paul</strong></h2>
             <nav>
                 <ul>
@@ -24,6 +25,11 @@
                     <li><a href="play.html">Play</a></li>
                     <li><a href="notes.html">Notes</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="switch-container">
+                            <img src="assets/images/darkmode.png" alt="Light Mode" class="dark-mode-icon" onclick="toggleDarkMode()">
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -35,56 +41,118 @@
                 Chess
                 <img src="assets/images/chess.png" alt="chess icon" width="50" height="50" style="vertical-align: middle;">
             </h3>
-            <p>Enjoy a game of chess online at <a href="https://www.chess.com/member/your-username" target="_blank">chess.com</a>.</p>
-        </div>
+            <p>
+                I enjoy playing chess on Chess.com, where I'm currently rated in the top 90% of players worldwide. 
+                I also frequent Lichess, a platform some of my friends use. If you'd like to challenge me to a game, 
+                you can find me on <a href="https://www.chess.com/member/so-dipe" target="_blank">Chess.com</a>. 
+                Feel free to send a friend request my way; I'll be sure to accept it.
+            </p>
+        </div>    
         
         <div class="play-section">
             <h3 class="project-head">
-                Sitcoms
+                Wikipedia
+                <img src="assets/images/wikipedia.png" alt="Wikipedia icon" width="50" height="50" style="vertical-align: middle;">
+            </h3>
+            <p>
+                I occasionally edit Wikipedia articles, often focusing on adding citations to pages and making information more accessible.
+            </p>
+        </div>
+        
+        
+        <div class="play-section">
+            <h3 class="project-head">
+                Movies and TV Shows
                 <img src="assets/images/tv.png" alt="TV icon" width="50" height="50" style="vertical-align: middle;">
             </h3>
-            <p>Relax and watch your favorite sitcoms for a good laugh and some entertainment.</p>
+            <p>
+                I enjoy watching movies, particularly those directed by Christopher Nolan, with The Dark Knight being a personal favorite. 
+                Additionally, I'm a fan of actors like Keanu Reeves and Al Pacino.
+
+                In terms of TV shows, I prefer sitcoms and anthologies. I've watched The Big Bang Theory, Friends, 
+                Modern Family, and Seinfeld at least three times each. Love, Death and Robots, Naruto and Ricky and Morty are also among my cartoons (anime).
+
+                I occasionally watch Nollywood movies, and I've compiled a list of some of my favorites, which 
+                you can find here: 
+                
+                <a href="https://www.notion.so/thelittleknownblog/Mary-s-List-b158377b5837457a88b06086844d6250">Mary's List</a> (curated by Mary).
+            </p>
         </div>
+        
 
         <div class="play-section">
             <h3 class="project-head">
                 Music
-                <img src="assets/images/music.png" alt="TV icon" width="50" height="50" style="vertical-align: middle;">
+                <img src="assets/images/music.png" alt="Music icon" width="50" height="50" style="vertical-align: middle;">
             </h3>
-            <p>Relax and watch your favorite sitcoms for a good laugh and some entertainment.</p>
+            <p>
+                In the realm of music, my favorites include Billie Eilish, Eminem, The Weeknd, Melaine Martinez, and Rihanna.
+        
+                Asake's "Lonely at the Top" has become a repetitive tune in my playlist, and I find it quite captivating.
+        
+                Additionally, I have an affinity for Boney M. and have curated an extensive playlist comprising music from the 80s and 90s.
+        
+                You can explore my Spotify profile for a glimpse of my playlists and follow me if you share similar music taste. Check it out here: 
+                
+                <a href="https://open.spotify.com/user/ja9kmd6xq9k8j8kqu716vmsug">Sodipe's Spotify</a>.
+            </p>
         </div>
+        
 
         <div class="play-section">
             <h3 class="project-head">
                 Football (Soccer)
-                <img src="assets/images/football.png" alt="TV icon" width="50" height="50" style="vertical-align: middle;">
+                <img src="assets/images/football.png" alt="Football icon" width="50" height="50" style="vertical-align: middle;">
             </h3>
-            <p>Relax and watch your favorite sitcoms for a good laugh and some entertainment.</p>
+            <p>
+                Although I enjoy watching football a lot, you won't catch me playing it. I'm a passionate Manchester United fan 
+                and try to catch as many of their games as possible. My interest extends to watching YouTube videos, particularly 
+                those focusing on football, especially Manchester United. I'm particularly drawn to tactical analysis videos and 
+                enjoy revisiting game highlights. My football watching is primarily centered around Manchester United, and I 
+                don't follow other football leagues closely.
+            </p>
         </div>
+        
 
         <div class="play-section">
             <h3 class="project-head">
                 Games
-                <img src="assets/images/play.png" alt="TV icon" width="50" height="50" style="vertical-align: middle;">
+                <img src="assets/images/play.png" alt="Games icon" width="50" height="50" style="vertical-align: middle;">
             </h3>
-            <p>Relax and watch your favorite sitcoms for a good laugh and some entertainment.</p>
-        </div>
+            <p>
+                I've had the pleasure of playing a diverse array of games and have many more on my list. Among my favorites are the Call of Duty: Modern Warfare series. I've also played and enjoyed every version of Pro Evolution Soccer from 2013 to 2021 and EA Sport's FIFA from 14 to 23.
+        
+                Additionally, I've completed Grand Theft Auto IV and V, as well as Need For Speed from both 2005 and 2012.
 
-        <div class="play-section">
-            <h3 class="project-head">
-                Football Manager
-                <img src="assets/images/manager.png" alt="TV icon" width="50" height="50" style="vertical-align: middle;">
-            </h3>
-            <p>Relax and watch your favorite sitcoms for a good laugh and some entertainment.</p>
+                But my favorite and most played games end up being building games like Cities Skylines and Sim City.
+            </p>
         </div>
         
         <div class="play-section">
             <h3 class="project-head">
-                Formula 1
-                <img src="assets/images/f1.png" alt="TV icon" width="50" height="50" style="vertical-align: middle;">
+                Football Manager
+                <img src="assets/images/manager.png" alt="Football Manager icon" width="50" height="50" style="vertical-align: middle;">
             </h3>
-            <p>Relax and watch your favorite sitcoms for a good laugh and some entertainment.</p>
+            <p>
+                Football Manager is my favorite game. I have played every version from 2016 to 2023. In 2017, 
+                I won the Champions League with Rangers F.C. and RB Leipzig.
+        
+                Usually, I play as the manager of Manchester United and focus on developing young players. 
+                Recently, I achieved went unbeaten for 2 seasons in a row with O.G.C. Nice and Paris Saint Germain, securing the treble both times.
+            </p>
         </div>
+        
+        
+        <div class="play-section">
+            <h3 class="project-head">
+                Formula 1
+                <img src="assets/images/f1.png" alt="Formula 1 icon" width="50" height="50" style="vertical-align: middle;">
+            </h3>
+            <p>
+                I follow Formula One, mainly due to my admiration for Lewis Hamilton. I also enjoy watching Lando Norris and Max Verstappen in action.
+            </p>
+        </div>
+        
 
     </div>
 
@@ -92,14 +160,18 @@
         <div class="contact-info">
             <h3>Contact</h3>
             <a href="mailto:sodipepaul@gmail.com">
-                <img src="assets/images/mail.png" alt="Mail" width="50" height="50" style="vertical-align: middle;">
+                <img src="assets/images/mail.png" alt="GMail" width="50" height="50" style="vertical-align: middle;">
             </a>
 
             <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
                 <img src="assets/images/linkedin.png" alt="LinkedIn" width="50" height="50" style="vertical-align: middle;">
             </a>
+
+            <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
+                <img src="assets/images/github.png" alt="GitHub" width="65" height="65" style="vertical-align: middle;">
+            </a>
         </div>
-        <p id="year">&copy; 2023 sodipe</p>
+        <p>&copy; 2023 sodipe</p>
     </footer>
 </body>
 
