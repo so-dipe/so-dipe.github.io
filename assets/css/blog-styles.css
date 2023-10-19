@@ -57,4 +57,31 @@ nav ul li a {
 .blog-container {
     margin-left: 20%;
     margin-right: 20%;
+    padding: 10px;
+}
+
+.section-head {
+    text-align: left;
+}
+
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-column {
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.blog {
+    border: 2px dashed blue;
+    padding: 10px;
+    background: #2b2b2b;
+    margin: 10px;
+}
+
+.blog:hover {
+    background: black;
 }
