@@ -195,9 +195,16 @@ body.dark-mode footer .contact-info h3 {
 }
 
 @media only screen and (max-width: 768px) {
+    #main-section {
+        text-align: center;
+        margin: 2vh auto;
+        width: 50%;
+    }
+
     #profile-picture {
         width: 100px;
         height: 100px;
+        margin-left: -35px; 
     }
 
     .menu {
