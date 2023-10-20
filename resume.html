@@ -1,133 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | sodipe</title>
-    <link rel="stylesheet" href="assets/css/opendyslexic.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/resume-styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume | sodipe</title>
+        <link rel="stylesheet" href="assets/css/opendyslexic.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/resume-styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    </head>
 
-</head>
+    <body>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/resume.js"></script>
+        <header>
+            <div id="main-section">
+                <img src="assets/images/profile.png" alt="Profile Picture" id="profile-picture">
+                <h2><strong>Sodipe Paul</strong></h2>
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">Resume/CV</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="play.html">Play</a></li>
+                        <li><a href="notes.html">Notes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <div class="switch-container">
+                                <img src="assets/images/darkmode.png" alt="Light Mode" class="dark-mode-icon" onclick="toggleDarkMode()" title="toggle dark mode">
+                            </div>
+                        </li>
+                        <li>
+                            <label class="switch" title="toggle dyslexic font">
+                              <input type="checkbox" onclick="toggleDyslexicFont()">
+                              <span class="slider"></span>
+                            </label>
+                        </li>                                        
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-<body>
-    <script src="assets/js/main.js"></script>
-    <header>
-        <div id="main-section">
-            <img src="assets/images/profile.png" alt="Profile Picture" id="profile-picture">
-            <h2><strong>Sodipe Paul</strong></h2>
-            <nav>
-                <div class="menu-icon" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume/CV</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="play.html">Play</a></li>
-                    <li><a href="notes.html">Notes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li>
-                        <div class="switch-container">
-                            <img src="assets/images/darkmode.png" alt="Light Mode" class="dark-mode-icon" onclick="toggleDarkMode()">
-                        </div>
-                    </li>
-                    <li>
-                        <label class="switch">
-                          <input type="checkbox" onclick="toggleDyslexicFont()">
-                          <span class="slider"></span>
-                        </label>
-                    </li>                                        
-                </ul>
-            </nav>
+        <div class="letter-container">
+            <div class="resume">
+                <h2>Sodipe Paul</h2>
+                <h3>Machine Learning Engineer</h3>
+                <p id="contact-line">
+                    <a href="mailto:sodipepaul@gmail.com">sodipepaul@gmail.com</a> |
+                    <a href="https://www.linkedin.com/in/so-dipe">Linkedin</a> |
+                    <a href="https://so-dipe.github.io/">Website</a>
+                </p>
+            
+                <section class="professional-summary">
+                    <p>Detail-oriented Machine Learning Engineer with a strong background in mathematics and data analysis. Experienced in developing and deploying machine learning models for various applications.</p>
+                </section>
+            
+                <section class="work-experience">
+                    <h4>WORK EXPERIENCE</h4>
+                    <p><strong>Machine Learning Engineer</strong> October 2021 - Present</p>
+                    <p>Self Employed</p>
+                    <ul>
+                        <li>Developing machine learning models for predictive analytics.</li>
+                        <li>Implementing natural language processing techniques for text analysis.</li>
+                        <li>Collaborating with clients to understand and address their specific business needs.</li>
+                    </ul>
+                    <p><strong>Data Science Intern</strong> June 2022 - October 2022</p>
+                    <p>Hamoye</p>
+                    <ul>
+                        <li>Developing machine learning models for predictive analytics.</li>
+                        <li>Implementing natural language processing techniques for text analysis.</li>
+                        <li>Collaborating with clients to understand and address their specific business needs.</li>
+                    </ul>
+                </section>
+            
+                <section class="education">
+                    <h4>EDUCATION</h4>
+                    <p><strong>B.S. Mathematics</strong> (December 2022)</p>
+                    <p>University of Ilorin</p>
+                    <ul>
+                        <li>GPA: 4.16/5.0</li>
+                        <li>Volunteer tutor, National Association of Mathematics Students, Unilorin Chapter</li>
+                    </ul>
+                </section>
+
+                <section class="certification">
+                    <h4>CERTIFICATION</h4>
+                    <ul>
+                        <li>IBM Data Science Professional Certificate</li>
+                        <li>Machine Learning Engineering in Producation Certificate - Deep Learning.AI</li>
+                        <li>Tensorflow Developer Certificate - Deep Learning.AI</li>
+                    </ul>
+                </section>
+            
+                <section class="skills">
+                    <h4>SKILLS</h4>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Python</li>
+                        <li>Data Analysis</li>
+                        <li>Statistical Modeling</li>
+                        <!-- Add more skills as necessary -->
+                    </ul>
+                </section>
+            </div>        
         </div>
-    </header>
-
-    <div class="letter-container">
-        <div class="resume">
-            <h2>Sodipe Paul</h2>
-            <h3>Machine Learning Engineer</h3>
-            <p id="contact-line">
-                <a href="mailto:sodipepaul@gmail.com">sodipepaul@gmail.com</a> |
-                <a href="https://www.linkedin.com/in/so-dipe">Linkedin</a> |
-                <a href="https://so-dipe.github.io/">Website</a>
-            </p>
-        
-            <section class="professional-summary">
-                <p>Detail-oriented Machine Learning Engineer with a strong background in mathematics and data analysis. Experienced in developing and deploying machine learning models for various applications.</p>
-            </section>
-        
-            <section class="work-experience">
-                <h4>WORK EXPERIENCE</h4>
-                <p><strong>Machine Learning Engineer</strong> October 2021 - Present</p>
-                <p>Self Employed</p>
-                <ul>
-                    <li>Developing machine learning models for predictive analytics.</li>
-                    <li>Implementing natural language processing techniques for text analysis.</li>
-                    <li>Collaborating with clients to understand and address their specific business needs.</li>
-                </ul>
-                <p><strong>Data Science Intern</strong> June 2022 - October 2022</p>
-                <p>Hamoye</p>
-                <ul>
-                    <li>Developing machine learning models for predictive analytics.</li>
-                    <li>Implementing natural language processing techniques for text analysis.</li>
-                    <li>Collaborating with clients to understand and address their specific business needs.</li>
-                </ul>
-            </section>
-        
-            <section class="education">
-                <h4>EDUCATION</h4>
-                <p><strong>B.S. Mathematics</strong> (December 2022)</p>
-                <p>University of Ilorin</p>
-                <ul>
-                    <li>GPA: 4.16/5.0</li>
-                    <li>Volunteer tutor, National Association of Mathematics Students, Unilorin Chapter</li>
-                </ul>
-            </section>
-
-            <section class="certification">
-                <h4>CERTIFICATION</h4>
-                <ul>
-                    <li>IBM Data Science Professional Certificate</li>
-                    <li>Machine Learning Engineering in Producation Certificate - Deep Learning.AI</li>
-                    <li>Tensorflow Developer Certificate - Deep Learning.AI</li>
-                </ul>
-            </section>
-        
-            <section class="skills">
-                <h4>SKILLS</h4>
-                <ul>
-                    <li>Machine Learning</li>
-                    <li>Python</li>
-                    <li>Data Analysis</li>
-                    <li>Statistical Modeling</li>
-                    <!-- Add more skills as necessary -->
-                </ul>
-            </section>
-        </div>        
-    </div>
-
-    <footer>
-        <div class="contact-info">
-            <h3>Contact</h3>
-            <a href="mailto:sodipepaul@gmail.com">
-                <img src="assets/images/mail.png" alt="GMail" width="50" height="50" style="vertical-align: middle;">
-            </a>
-
-            <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
-                <img src="assets/images/linkedin.png" alt="LinkedIn" width="50" height="50" style="vertical-align: middle;">
-            </a>
-
-            <a href="https://github.com/so-dipe" target="_blank">
-                <img src="assets/images/github.png" alt="GitHub" width="50" height="50" style="vertical-align: middle;">
-            </a>
+        <div class="download-button">
+            <button onclick="downloadResume()">Download Resume as PDF</button>
         </div>
-        <p>&copy; 2023 sodipe</p>
-    </footer>
-</body>
+        
 
-</html>
+        <footer>
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <a href="mailto:sodipepaul@gmail.com">
+                    <img src="assets/images/mail.png" alt="GMail" width="50" height="50" style="vertical-align: middle;">
+                </a>
+
+                <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
+                    <img src="assets/images/linkedin.png" alt="LinkedIn" width="50" height="50" style="vertical-align: middle;">
+                </a>
+
+                <a href="https://github.com/so-dipe" target="_blank">
+                    <img src="assets/images/github.png" alt="GitHub" width="50" height="50" style="vertical-align: middle;">
+                </a>
+            </div>
+            <p>&copy; 2023 sodipe</p>
+        </footer>
+    </body>
+
+    </html>
