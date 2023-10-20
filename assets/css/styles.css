@@ -7,8 +7,8 @@ body {
 }
 
 header {
-    background-color: #eeeded;
-    color: #000;
+    background-color: #180b52;
+    color: #ffffff;
     padding: 10px 0;
     position: relative;
 }
@@ -26,6 +26,7 @@ header.transition {
 #main-section h2 {
     font-size: 50px; /* Adjust the font size as needed */
     font-family: 'Ubuntu Mono', monospace;
+    text-align: center;
 }
 
 #profile-picture {
@@ -52,6 +53,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    border-bottom: 5px solid white;
+    color: #b897dd;
+
 }
 
 .section-style {
@@ -89,8 +97,8 @@ nav ul li a {
 }
 
 footer {
-    background-color: #f1e5c8;
-    color: #3e2723;
+    background-color: #5b346b;
+    color: #ffffff;
     padding: 20px 10%;
     margin-top: 50px;
 }
@@ -100,7 +108,7 @@ footer .contact-info {
 }
 
 footer .contact-info h3 {
-    color: #3e2723;
+    color: #ebebeb;
 }
 
 footer a {
@@ -136,6 +144,10 @@ body.dark-mode header {
     color: white;
 }
 
+body.dark-mode #profile-picture {
+    border: 2px dashed rgb(229, 255, 0);
+}
+
 body.dark-mode footer {
     background-color: #e6e6fa; /* Light purple */
     color: #3e2723;
@@ -160,4 +172,31 @@ body.dark-mode nav a {
 
 body.dark-mode nav a:hover {
     color: #b897dd;
+}
+
+body.dark-mode footer .contact-info h3 {
+    color: #424242;
+}
+
+@media only screen and (max-width: 768px) {
+    #main-section {
+        width: 80%;
+    }
+
+    #profile-picture {
+        width: 300px;
+        height: 300px;
+    }
+
+    .section-style {
+        margin: 20px 5%;
+    }
+
+    .section-head {
+        margin-left: 5%;
+    }
+
+    footer .contact-info {
+        text-align: left;
+    }
 }
