@@ -54,6 +54,11 @@
 .details {
     border: 2px dashed red;
     padding: 10px;
+    margin: 5px;
+}
+
+.details:hover {
+    background-color: #000;
 }
 
 body.dark-mode a {

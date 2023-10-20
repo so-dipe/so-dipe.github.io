@@ -58,3 +58,10 @@
     margin: 0px;
 }
 
+@media only screen and (max-width: 768px) {
+    .letter-container {
+        width: 94%;
+        margin: 20px;
+        border: 1px dashed red;
+    }
+}
