@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('rotationClicked', clicked);
     });
 
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    const isDarkMode = localStorage.getItem('darkMode') !== 'false'; // Update this line
     if (isDarkMode) {
         toggleDarkMode();
     }
