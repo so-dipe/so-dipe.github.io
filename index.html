@@ -17,7 +17,12 @@
             <img src="assets/images/profile.png" alt="Profile Picture" id="profile-picture">
             <h2><strong>Sodipe Paul</strong></h2>
             <nav>
-                <ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="resume.html">Resume/CV</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -35,15 +40,23 @@
                           <input type="checkbox" onclick="toggleDyslexicFont()">
                           <span class="slider"></span>
                         </label>
-                      </li>                                        
+                    </li>                                        
                 </ul>
             </nav>
         </div>
     </header>
 
-    <p style="margin-left: 20%;">PS: If you tap on the light, you would switch to a Dyslexia Font.</p>
+    <p style="margin-left: 20%; margin-right: 20%;">
+        PS: If you tap on the light 
+        (<img src="assets/images/off.png" height="30" width="30" style="vertical-align: middle;">), 
+        you can switch to a Dyslexia Font. 
+        If you tap on the moon/sun 
+        (<img src="assets/images/darkmode.png" height="30" width="30" style="vertical-align: middle;">), 
+        you can toggle between light and dark modes.
+    </p>
+    
     <h2 class="section-head">
-        ask *About me
+        *About me
         <img src="assets/images/about.png" alt="About Icon" width="50" height="50" style="vertical-align: middle;">
     </h2>
     <section id="about-section" class="section-style">
@@ -156,7 +169,7 @@
             </a>
 
             <a href="https://github.com/so-dipe" target="_blank">
-                <img src="assets/images/github.png" alt="GitHub" width="65" height="65" style="vertical-align: middle;">
+                <img src="assets/images/github.png" alt="GitHub" width="50" height="50" style="vertical-align: middle;">
             </a>
         </div>
         <p>&copy; 2023 sodipe</p>

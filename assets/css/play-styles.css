@@ -47,4 +47,9 @@ body.dark-mode .play-container a:hover {
     .section-head {
         margin-left: 5%;
     }
+
+    .project-head {
+        border-bottom: 2px dashed #000000;
+    }
+    
 }

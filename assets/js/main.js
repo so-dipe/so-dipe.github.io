@@ -5,8 +5,13 @@ window.addEventListener('scroll', function() {
     var content = document.querySelector('body');
 
     if (scrollValue > 50) {
-        img.style.width = '150px';
-        img.style.height = '150px';
+        if (window.innerWidth > 768) {
+            img.style.width = '150px';
+            img.style.height = '150px';
+        } else if (window.innerWidth < 768) {
+            img.style.width = '100px';
+            img.style.height = '100px';
+        }
         img.style.position = 'fixed';
         img.style.top = '10px';
         img.style.left = '10px';
@@ -18,8 +23,13 @@ window.addEventListener('scroll', function() {
         header.style.zIndex = '1000';
         content.style.paddingTop = '25%'; // Adjust this value to fit your header height
     } else {
-        img.style.width = '500px';
-        img.style.height = '500px';
+        if (window.innerWidth > 768) {
+            img.style.width = '500px';
+            img.style.height = '500px';
+        } else if (window.innerWidth < 768) {
+            img.style.width = '300px';
+            img.style.height = '300px';
+        }
         img.style.position = 'relative';
         img.style.top = 'unset';
         img.style.left = 'unset';
@@ -29,6 +39,7 @@ window.addEventListener('scroll', function() {
         content.style.paddingTop = '0';
     }
 });
+
 
 function toggleDarkMode() {
     const body = document.querySelector('body');
@@ -58,6 +69,13 @@ function toggleDyslexicFont() {
 
     // Storing dyslexic font preference in localStorage
     localStorage.setItem('dyslexicFont', !isDyslexicFont);
+}
+
+function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+    const menuIcon = document.querySelector('.menu-icon');
+    menuIcon.classList.toggle('change');
 }
 
 

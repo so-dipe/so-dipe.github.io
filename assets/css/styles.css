@@ -28,8 +28,8 @@ header.transition {
 }
 
 #main-section h2 {
-    font-size: 50px; /* Adjust the font size as needed */
-    font-family: 'Ubuntu Mono', monospace;
+    font-size: 50px;
+    /* font-family: 'Ubuntu Mono', monospace; */
     text-align: center;
 }
 
@@ -47,6 +47,7 @@ header.transition {
 nav ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none;
     padding: 0;
 }
@@ -64,6 +65,14 @@ nav ul li a:hover {
     border-bottom: 5px solid white;
     color: #b897dd;
 
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .section-style {
@@ -146,7 +155,6 @@ footer img:hover {
     transition: transform 0.5s;
 }
 
-
 body.dark-mode header {
     background-color: rgb(41, 120, 172);
     color: white;
@@ -187,13 +195,49 @@ body.dark-mode footer .contact-info h3 {
 }
 
 @media only screen and (max-width: 768px) {
-    #main-section {
-        width: 80%;
+    #profile-picture {
+        width: 100px;
+        height: 100px;
     }
 
-    #profile-picture {
-        width: 300px;
-        height: 300px;
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        padding: 5px;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 24px;
+        width: 30px;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        transition: 0.4s;
+    }
+
+    .change .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .change .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 
     .section-style {
@@ -214,15 +258,15 @@ body.dark-mode footer .contact-info h3 {
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
+}
   
-  .switch input {
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
   
-  .slider {
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -234,25 +278,13 @@ body.dark-mode footer .contact-info h3 {
     transition: .4s;
     height: 50px;
     width: 50px;
-  }
+}
   
-  /* .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-image: url('/assets/images/on.png');
-    background-size: cover;
-    transition: .4s;
-  } */
-  
-  input:checked + .slider {
+input:checked + .slider {
     background-image: url('/assets/images/off.png');
-  }
+}
   
-  input:checked + .slider:before {
+input:checked + .slider:before {
     transform: translateX(26px);
-  }
+}
   
