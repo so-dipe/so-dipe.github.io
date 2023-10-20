@@ -46,6 +46,21 @@ function toggleDarkMode() {
     localStorage.setItem('darkMode', isDarkMode);
 }
 
+function toggleDyslexicFont() {
+    const body = document.querySelector('body');
+    const isDyslexicFont = body.classList.contains('dyslexic-font');
+
+    if (!isDyslexicFont) {
+        body.classList.add('dyslexic-font');
+    } else {
+        body.classList.remove('dyslexic-font');
+    }
+
+    // Storing dyslexic font preference in localStorage
+    localStorage.setItem('dyslexicFont', !isDyslexicFont);
+}
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const darkModeIcon = document.querySelector('.dark-mode-icon');
     let clicked = localStorage.getItem('rotationClicked') === 'true';
@@ -66,5 +81,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     if (clicked) {
         darkModeIcon.classList.add('rotate');
+    }
+
+    const isDyslexicFont = localStorage.getItem('dyslexicFont') === 'true';
+    if (isDyslexicFont) {
+        const body = document.querySelector('body');
+        body.classList.add('dyslexic-font');
     }
 });
