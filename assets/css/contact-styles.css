@@ -34,3 +34,13 @@ body.dark-mode .contact-container a {
 body.dark-mode .contact-container a:hover {
     color: #5530ad;
 }
+
+@media only screen and (max-width: 768px) {
+    .contact-container {
+        margin: 20px 5%;
+    }
+
+    .section-head {
+        margin-left: 5%;
+    }
+}
