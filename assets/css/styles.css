@@ -87,6 +87,10 @@ nav ul li a:hover::before, nav ul li a:hover::after {
     width: 50%;
 }
 
+a:hover {
+    color: #b897dd;
+}
+
 .menu-icon {
     display: none;
     cursor: pointer;
@@ -146,6 +150,7 @@ footer .contact-info h3 {
 
 footer a {
     text-decoration: None;
+    color: #e9d947;
 }
 
 footer img:hover {

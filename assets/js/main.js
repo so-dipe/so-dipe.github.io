@@ -8,10 +8,12 @@ window.addEventListener('scroll', function() {
         if (window.innerWidth > 768) {
             img.style.width = '150px';
             img.style.height = '150px';
+            content.style.paddingTop = '29%';
         } else if (window.innerWidth < 768) {
             img.style.width = '100px';
             img.style.height = '100px';
             img.style.marginLeft = '0px'
+            content.style.paddingTop = '70%';
         }
         img.style.position = 'fixed';
         img.style.top = '10px';
@@ -22,7 +24,7 @@ window.addEventListener('scroll', function() {
         header.style.top = '0';
         header.style.width = '100%';
         header.style.zIndex = '1000';
-        content.style.paddingTop = '25%'; // Adjust this value to fit your header height
+        // content.style.paddingTop = '25%'; // Adjust this value to fit your header height
     } else {
         if (window.innerWidth > 768) {
             img.style.width = '500px';
