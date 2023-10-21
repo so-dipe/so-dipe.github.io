@@ -45,9 +45,10 @@
 .dropdown-icon i {
     font-size: 40px;
     transition: transform 0.7s;
+    transform: rotate(0deg);
 }
 
-.dropdown-icon.clicked i {
+.clicked i {
     transform: rotate(180deg);
 }
 
