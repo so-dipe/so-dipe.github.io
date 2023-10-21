@@ -99,6 +99,22 @@ a:hover {
     right: 10px;
 }
 
+#ps {
+    margin-left: 30%; 
+    margin-right: 30%;
+    background-color: #d04beb;
+    color: white;
+    font-size: 18px;
+}
+
+#ps a {
+    color: rgb(42, 39, 236);
+}
+
+#ps a:hover {
+    color: rgb(18, 17, 66);
+}
+
 .section-style {
     margin: 50px 20%;
     margin-top: 0%;
@@ -219,6 +235,11 @@ body.dark-mode footer .contact-info h3 {
     color: #424242;
 }
 
+body.dark-mode footer a {
+    text-decoration: None;
+    color: #1240d4;
+}
+
 @media only screen and (max-width: 768px) {
     #main-section {
         text-align: center;
@@ -282,6 +303,11 @@ body.dark-mode footer .contact-info h3 {
 
     footer .contact-info {
         text-align: left;
+    }
+
+    #ps {
+        margin-left: 20%; 
+        margin-right: 20%;
     }
 }
 
