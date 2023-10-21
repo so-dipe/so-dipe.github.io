@@ -197,7 +197,7 @@ body.dark-mode footer .contact-info h3 {
 @media only screen and (max-width: 768px) {
     #main-section {
         text-align: center;
-        margin: 2vh auto;
+        margin: 4vh auto;
         width: 50%;
     }
 
@@ -273,7 +273,7 @@ body.dark-mode footer .contact-info h3 {
     height: 0;
 }
   
-.slider {
+/* .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -289,9 +289,9 @@ body.dark-mode footer .contact-info h3 {
   
 input:checked + .slider {
     background-image: url('/assets/images/off.png');
-}
+} */
   
-input:checked + .slider:before {
+/* input:checked + .slider:before {
     transform: translateX(26px);
 }
-  
+   */

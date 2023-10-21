@@ -39,6 +39,10 @@ body.dark-mode .play-container a:hover {
     color: #5530ad;
 }
 
+body.dark-mode .project-head {
+    border-bottom: 2px dashed #000000;
+}
+
 @media only screen and (max-width: 768px) {
     .play-container{
         margin: 20px 5%;
@@ -46,10 +50,5 @@ body.dark-mode .play-container a:hover {
 
     .section-head {
         margin-left: 5%;
-    }
-
-    .project-head {
-        border-bottom: 2px dashed #000000;
-    }
-    
+    }    
 }

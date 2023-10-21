@@ -78,6 +78,25 @@ function toggleMenu() {
     menuIcon.classList.toggle('change');
 }
 
+function toggleDyslexicFont() {
+    const isDyslexicFont = localStorage.getItem('dyslexicFont') === 'true';
+    const onImage = document.querySelector('.on-image');
+    const offImage = document.querySelector('.off-image');
+
+    if (isDyslexicFont) {
+        document.body.classList.remove('dyslexic-font');
+        localStorage.setItem('dyslexicFont', 'false');
+        onImage.style.display = 'none';
+        offImage.style.display = 'block';
+    } else {
+        document.body.classList.add('dyslexic-font');
+        localStorage.setItem('dyslexicFont', 'true');
+        onImage.style.display = 'block';
+        offImage.style.display = 'none';
+    }
+}
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const darkModeIcon = document.querySelector('.dark-mode-icon');
@@ -101,10 +120,17 @@ document.addEventListener('DOMContentLoaded', function() {
         darkModeIcon.classList.add('rotate');
     }
 
-    const isDyslexicFont = localStorage.getItem('dyslexicFont') === 'true';
-    if (isDyslexicFont) {
-        const body = document.querySelector('body');
-        body.classList.add('dyslexic-font');
-    }
+    // const isDyslexicFont = localStorage.getItem('dyslexicFont') === 'true';
+    // const onImage = document.querySelector('.on-image');
+    // const offImage = document.querySelector('.off-image');
+    // if (isDyslexicFont) {
+    //     document.body.classList.add('dyslexic-font');
+    //     onImage.style.display = 'block';
+    //     offImage.style.display = 'none';
+    // } else {
+    //     document.body.classList.remove('dyslexic-font');
+    //     onImage.style.display = 'none';
+    //     offImage.style.display = 'block';
+    // }
 });
 
