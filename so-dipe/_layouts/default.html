@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    {% raw %}{% include _sass/styles.css %}{% endraw %}
+    <!-- Include your CSS links here -->
+</head>
+<body>
+
+<header>
+    <div id="main-section">
+        <img src="assets/images/profile.png" alt="Profile Picture" id="profile-picture">
+        <h2><strong>Sodipe Paul</strong></h2>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume/CV</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="play.html">Play</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- Add more menu items as needed -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+{{ content }}
+
+<footer>
+    <div class="contact-info">
+        <h3>Contact</h3>
+        <a href="mailto:sodipepaul@gmail.com">
+            <img src="assets/images/mail.png" alt="GMail" width="50" height="50" style="vertical-align: middle;">
+        </a>
+
+        <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
+            <img src="assets/images/linkedin.png" alt="LinkedIn" width="50" height="50" style="vertical-align: middle;">
+        </a>
+
+        <a href="https://github.com/so-dipe" target="_blank">
+            <img src="assets/images/github.png" alt="GitHub" width="50" height="50" style="vertical-align: middle;">
+        </a>
+    </div>
+    <p>&copy; 2023 sodipe | icons by <a href="https://icons8.com/" target="_blank">icons8</a></p>
+</footer>
+
+<!-- Add your JavaScript files here if necessary -->
+
+</body>
+</html>
