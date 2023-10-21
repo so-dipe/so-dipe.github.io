@@ -1,26 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-    function downloadResume() {
-        const doc = new jsPDF();
-        const elementHandler = {
-            '#ignorePDF': function (element, renderer) {
-                return true;
-            }
-        };
+function downloadResume() {
+    const element = document.querySelector(".letter-container");
+    const opt = {
+      margin: 5,
+      filename: `$sodipe_resume.pdf`,
+      image: { type: "jpeg", quality: 1 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+    };
 
-        const source = window.document.getElementById("letter-container");
-
-        doc.fromHTML(
-            source,
-            15,
-            15,
-            {
-                'width': 170,
-                'elementHandlers': elementHandler
-            },
-            function () {
-                doc.save('sodipe_paul_resume.pdf');
-            }
-        );
-    }
-});
-
+    html2pdf().from(element).set(opt).save();
+  }
