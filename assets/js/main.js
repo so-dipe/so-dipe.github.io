@@ -122,17 +122,18 @@ document.addEventListener('DOMContentLoaded', function() {
         darkModeIcon.classList.add('rotate');
     }
 
-    // const isDyslexicFont = localStorage.getItem('dyslexicFont') === 'true';
-    // const onImage = document.querySelector('.on-image');
-    // const offImage = document.querySelector('.off-image');
-    // if (isDyslexicFont) {
-    //     document.body.classList.add('dyslexic-font');
-    //     onImage.style.display = 'block';
-    //     offImage.style.display = 'none';
-    // } else {
-    //     document.body.classList.remove('dyslexic-font');
-    //     onImage.style.display = 'none';
-    //     offImage.style.display = 'block';
-    // }
+    const isDyslexicFont = localStorage.getItem('dyslexicFont') === 'true';
+    const onImage = document.querySelector('.on-image');
+    const offImage = document.querySelector('.off-image');
+
+    if (isDyslexicFont) {
+        document.body.classList.add('dyslexic-font');
+        onImage.style.display = 'block';
+        offImage.style.display = 'none';
+    } else {
+        document.body.classList.remove('dyslexic-font');
+        onImage.style.display = 'none';
+        offImage.style.display = 'block';
+    }
 });
 
