@@ -11,6 +11,7 @@ window.addEventListener('scroll', function() {
         } else if (window.innerWidth < 768) {
             img.style.width = '100px';
             img.style.height = '100px';
+            img.style.marginLeft = '0px'
         }
         img.style.position = 'fixed';
         img.style.top = '10px';
@@ -29,6 +30,7 @@ window.addEventListener('scroll', function() {
         } else if (window.innerWidth < 768) {
             img.style.width = '300px';
             img.style.height = '300px';
+            img.style.marginLeft = '-22%'
         }
         img.style.position = 'relative';
         img.style.top = 'unset';

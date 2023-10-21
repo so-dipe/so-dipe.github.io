@@ -25,7 +25,6 @@
 .resume h2 {
     text-align: left;
     font-size: 36px;
-    font-family: 'Times New Romans', serif;
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -58,10 +57,39 @@
     margin: 0px;
 }
 
+.download-button {
+    text-align: center;
+    margin-top: -50px;
+    padding: 20px;
+}
+
+.download-button button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 0;
+    border: 1px solid green;
+    background-color: #fff;
+}
+
+.download-button button:hover {
+    background-color: #dab4f0;
+}
+
+.download-button button:active {
+    background-color: #be9ce6;
+    border-radius: 0;
+    border: 1px solid green;
+}
+
+
 @media only screen and (max-width: 768px) {
     .letter-container {
         width: 94%;
         margin: 20px;
         border: 1px dashed red;
+    }
+
+    .download-button {
+        margin: 2% 20px
     }
 }

@@ -29,7 +29,6 @@ header.transition {
 
 #main-section h2 {
     font-size: 50px;
-    /* font-family: 'Ubuntu Mono', monospace; */
     text-align: center;
 }
 
@@ -59,12 +58,33 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
+    position: relative;
 }
 
-nav ul li a:hover {
-    border-bottom: 5px solid white;
-    color: #b897dd;
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 5px;
+    background-color: white;
+    transition: all 0.3s;
+}
 
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 50%;
+    width: 0;
+    height: 5px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover::before, nav ul li a:hover::after {
+    width: 50%;
 }
 
 .menu-icon {
@@ -204,7 +224,7 @@ body.dark-mode footer .contact-info h3 {
     #profile-picture {
         width: 100px;
         height: 100px;
-        margin-left: -35px; 
+        margin-left: -22%; 
     }
 
     .menu {
