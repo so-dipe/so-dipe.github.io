@@ -32,7 +32,7 @@ window.addEventListener('scroll', function() {
         } else if (window.innerWidth < 768) {
             img.style.width = '300px';
             img.style.height = '300px';
-            img.style.marginLeft = '-22%'
+            img.style.marginLeft = '-20%'
         }
         img.style.position = 'relative';
         img.style.top = 'unset';
