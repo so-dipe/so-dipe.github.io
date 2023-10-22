@@ -46,7 +46,7 @@
     font-size: 40px;
     transition: transform 0.7s;
     transform: rotate(0deg);
-}
+}   
 
 .clicked i {
     transform: rotate(180deg);
@@ -67,7 +67,11 @@ body.dark-mode a {
 }
 
 body.dark-mode .project:hover{
-    background: #e7e6e6;
+    background: #f0eeee;
+}
+
+body.dark-mode .details:hover {
+    background-color: #ffffff;
 }
 
 @media only screen and (max-width: 768px) {
