@@ -1,19 +1,25 @@
 window.addEventListener('scroll', function() {
     var scrollValue = window.scrollY;
     var img = document.getElementById('profile-picture');
+    var main = document.getElementById('main-section')
+    var mainhead = main.getElementsByTagName('h2')
     var header = document.querySelector('header');
     var content = document.querySelector('body');
 
     if (scrollValue > 50) {
         if (window.innerWidth > 768) {
-            img.style.width = '150px';
-            img.style.height = '150px';
-            content.style.paddingTop = '29%';
-        } else if (window.innerWidth < 768) {
             img.style.width = '100px';
             img.style.height = '100px';
+            content.style.paddingTop = '29%';
+        } else if (window.innerWidth < 768) {
+            img.style.width = '50px';
+            img.style.height = '50px';
             img.style.marginLeft = '0px'
             content.style.paddingTop = '70%';
+            for (var i = 0; i < mainhead.length; i++) {
+                mainhead[i].style.fontSize = '20px';
+            }
+            main.style.margin = '1.5vh auto';
         }
         img.style.position = 'fixed';
         img.style.top = '10px';
