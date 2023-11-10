@@ -36,9 +36,9 @@ window.addEventListener('scroll', function() {
             img.style.width = '500px';
             img.style.height = '500px';
         } else if (window.innerWidth < 768) {
-            img.style.width = '300px';
-            img.style.height = '300px';
-            img.style.marginLeft = '-20%'
+            img.style.width = '200px';
+            img.style.height = '200px';
+            // img.style.marginLeft = '-20%'
         }
         img.style.position = 'relative';
         img.style.top = 'unset';
