@@ -1,213 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | sodipe</title>
-    <link rel="icon" type="image/png" href="assets/images/physics.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/opendyslexic.css">
+    <title>ṢODIPE</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/projects-styles.css">
-
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
 <body>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/projects.js"></script>
-    <header>
-        <div id="main-section">
-            <img src="assets/images/profile.png" alt="Profile Picture" id="profile-picture">
-            <h2><strong>Sodipe Paul</strong></h2>
-            <nav>
-                <div class="menu-icon" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume/CV</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="play.html">Play</a></li>
-                    <li><a href="notes.html">Notes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li>
-                        <div class="switch-container">
-                            <img src="assets/images/darkmode.png" alt="Light Mode" class="dark-mode-icon" onclick="toggleDarkMode()" title="toggle dark mode">
-                        </div>
-                    </li>
-                    <li>
-                        <label class="switch" title="toggle dyslexic font">
-                            <input type="checkbox" onclick="toggleDyslexicFont()">
-                            <span class="slider">
-                                <img src="assets/images/on.png" class="on-image" style="display: none;" height="75" width="75">
-                                <img src="assets/images/off.png" class="off-image" style="display: block;" height="75" width="75">
-                            </span>
-                        </label>
-                    </li>                                        
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="project-container">
-        <div class="project-section">
-            <h2 class="project-head">
-                Completed
-                <img src="assets/images/completed.png" alt="completed projects icon" width="50" height="50" style="vertical-align: middle;">
-            </h2>
-            <div class="project">
-                <div class="project-title">
-                    <h3>Mental Math App</h3>
-                    <div class="dropdown-icon">
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <p>A web application to improve mental math skills.</p>
-                </div>
-                <div class="details" style="display: none;">
-                    <p><strong>Motivation:</strong> 
-                        I designed this app after watching a video from Answers in Progress on how STEM majors 
-                        find mental math hard and as a STEM major, I could relate.
-                    </p>
-                    <p><strong>Github:</strong> <a href="https://github.com/so-dipe/MentalMath" target="_blank">GitHub Repository</a></p>
-                    <p><strong>Project Deployment:</strong> <a href="https://mental-math.onrender.com/" target="_blank">Project Deployment Link</a></p>
-                    <p><strong>Tech Stack:</strong> 
-                        <img src="assets/images/html.png" alt="HTML" width="20" height="20" style="vertical-align: middle;">HTML
-                        <img src="assets/images/css.png" alt="CSS" width="20" height="20" style="vertical-align: middle;">CSS
-                        <img src="assets/images/js.png" alt="JavaScript" width="20" height="20" style="vertical-align: middle;">JS
-                        <img src="assets/images/flask.png" alt="Flask" width="20" height="20" style="vertical-align: middle;">Flask
-                        <img src="assets/images/python.png" alt="Python" width="20" height="20" style="vertical-align: middle;">Python
-                        <img src="assets/images/docker.png" alt="Docker" width="20" height="20" style="vertical-align: middle;">Docker
-                    </p>
-                    <p><strong>Collaborators:</strong> Wale</p>
-                    <!-- Add more relevant details as necessary -->
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">
-                    <h3>WhatsApp Chat Analyzer</h3>
-                    <div class="dropdown-icon">
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <p>Analyze WhatsApp chat data to extract insights and trends.</p>
-                </div>
-                <div class="details" style="display: none;">
-                    <p><strong>Motivation:</strong> 
-                        I developed this an excuse to use Streamlit.
-                    </p>
-                    <p><strong>Github:</strong> <a href="https://github.com/so-dipe/Whatsapp-chat-analyzer" target="_blank">GitHub Repository</a></p>
-                    <p><strong>Project Deployment:</strong> <a href="https://so-dipe-whatsapp-chat-analyzer-appmain-7uov30.streamlit.app/" target="_blank">Project Deployment Link</a></p>
-                    <p><strong>Tech Stack:</strong> 
-                        <img src="assets/images/flask.png" alt="Flask" width="20" height="20" style="vertical-align: middle;">Streamlit
-                        <img src="assets/images/python.png" alt="Python" width="20" height="20" style="vertical-align: middle;">Python
-                    </p>
-                    <p><strong>Collaborators:</strong> --</p>
-                    <!-- Add more relevant details as necessary -->
-                </div>
-            </div>
-        </div>
     
-        <div class="project-section">
-            <h2 class="project-head">
-                In Progress
-                <img src="assets/images/in progress.png" alt="in progress projects icon" width="50" height="50" style="vertical-align: middle;">
-            </h2>
+    <div class="half">
+        <div class="project-list">
+            <div class="project">
+                <h2 class="project-title">WhatsApp Bot <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                <p class="short-description">the bot that can.</p>
+                <div class="more-details">
+                    <p>In what started as a project to connect a language model (gemini-pro) to whatsapp, I built this...
+                        <br>
+                        A whatsapp template for a bot that can be connected to various Large Language Models and can be used for various purposes.
+                        <br>
+                    </p>
+                    <a href="https://github.com/so-dipe/WhatsAppBot">github repo</a>
+                </div>
+            </div>
+            <div class="project">
+                <h2 class="project-title">Resume Generator <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                <p class="short-description">generate tailored resumes on the fly</p>
+                <div class="more-details">
+                    <p>Add GPT3.5 turbo to a flask app, a well crafted prompt 
+                        to generate custom resumes and UI for users to post their desired job description and you 
+                        get this diabolical resume generator.
+                    </p>
+                    <a href="https://github.com/so-dipe/CustomResumeGen">github repo</a>
+                </div>
+            </div>
+            <div class="project">
+                <h2 class="project-title">Mental Math <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                <p class="short-description">how fast can you solve 20 math questions</p>
+                <div class="more-details">
+                    <p>
+                        Just a simple game to test how fast you can solve 20 math questions in addition, subtraction, 
+                        multiplication and division.
+                    </p>
+                    <a href="https://github.com/so-dipe/MentalMath">github repo</a>
+                </div>
+            </div>
             
-            <div class="project">
-                <div class="project-title">
-                    <h3>Custom Resume Generator</h3>
-                    <div class="dropdown-icon">
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <p>Generate Resumes from job descriptions.</p>
-                </div>
-                <div class="details" style="display: none;">
-                    <p><strong>Motivation:</strong> 
-                        I had OpenAI's api and I wanted to use it.
-                    </p>
-                    <p><strong>Github:</strong> <a href="https://github.com/so-dipe/CustomResumeGen" target="_blank">GitHub Repository</a></p>
-                    <p><strong>Project Deployment:</strong> <a href="https://resumegen-swl0.onrender.com/" target="_blank">Project Deployment Link</a></p>
-                    <p><strong>Tech Stack:</strong> 
-                        <img src="assets/images/html.png" alt="HTML" width="20" height="20" style="vertical-align: middle;">HTML
-                        <img src="assets/images/css.png" alt="CSS" width="20" height="20" style="vertical-align: middle;">CSS
-                        <img src="assets/images/js.png" alt="JavaScript" width="20" height="20" style="vertical-align: middle;">JS
-                        <img src="assets/images/flask.png" alt="Flask" width="20" height="20" style="vertical-align: middle;">Flask
-                        <img src="assets/images/python.png" alt="Python" width="20" height="20" style="vertical-align: middle;">Python
-                        <img src="assets/images/docker.png" alt="Docker" width="20" height="20" style="vertical-align: middle;">Docker
-                    </p>
-                    <p><strong>Other Collaborators:</strong> Wale</p>
-                    <!-- Add more relevant details as necessary -->
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">
-                    <h3>Speech Coach Bot</h3>
-                    <div class="dropdown-icon">
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <p>Speak Articulately.</p>
-                </div>
-                <div class="details" style="display: none;">
-                    <p><strong>Motivation:</strong> 
-                        Do I need a reason.
-                    </p>
-                    <p><strong>Github:</strong> <a href="https://github.com/so-dipe/SpeechCoach" target="_blank">GitHub Repository</a></p>
-                    <p><strong>Project Deployment:</strong> <a href="---" target="_blank">Project Deployment Link</a></p>
-                    <p><strong>Tech Stack:</strong> 
-                        <img src="assets/images/flask.png" alt="Flask" width="20" height="20" style="vertical-align: middle;">Telegram API
-                        <img src="assets/images/python.png" alt="Python" width="20" height="20" style="vertical-align: middle;">Python
-                        <img src="assets/images/docker.png" alt="Docker" width="20" height="20" style="vertical-align: middle;">Docker
-                    </p>
-                    <p><strong>Other Collaborators:</strong> --</p>
-                    <!-- Add more relevant details as necessary -->
-                </div>
-            </div>
-        </div>
-    
-        <div class="project-section">
-            <h2 class="project-head">
-                Notebooks
-                <img src="assets/images/python.png" alt="notebooks icon" width="50" height="50" style="vertical-align: middle;">
-            </h2>
-            <!-- Add your project notebooks here -->
-            <div class="project">
-                <h3>Sentiment Analysis Notebook</h3>
-                <p>Did a little sentiment analysis of the IMDB Movie Reviews dataset...</p>
-                <p><strong>Notebook Link: </strong><a href="https://github.com/so-dipe/Internships/blob/main/Fellowship.ai/IMDB_Sentiment_Analysis.ipynb">Notebook</a></p>
-                <!-- Add more details about the project, such as the technologies used and any relevant links. -->
-            </div>
-            <div class="project">
-                <h3>Time Series Analysis of Gun Violence</h3>
-                <p>Some work I did during my internship.</p>
-                <p><strong>Notebook Link: </strong><a href="https://github.com/so-dipe/Internships/blob/main/TSA.ipynb">Notebook</a></p>
-                <!-- Add more details about the project, such as the technologies used and any relevant links. -->
-            </div>
+            <!-- Repeat for each project -->
         </div>
     </div>
-    
-
-    <footer>
-        <div class="contact-info">
-            <h3>Contact</h3>
-            <a href="mailto:sodipepaul@gmail.com">
-                <img src="assets/images/mail.png" alt="GMail" width="50" height="50" style="vertical-align: middle;">
-            </a>
-
-            <a href="https://www.linkedin.com/in/so-dipe" target="_blank">
-                <img src="assets/images/linkedin.png" alt="LinkedIn" width="50" height="50" style="vertical-align: middle;">
-            </a>
-
-            <a href="https://github.com/so-dipe" target="_blank">
-                <img src="assets/images/github.png" alt="GitHub" width="50" height="50" style="vertical-align: middle;">
-            </a>
+    <div class="half">
+        <!-- <div class="slideshow"></div> -->
+        <div class="type-text">
+            <p>Euler Lagrange</p>
         </div>
-        <p>&copy; 2023 sodipe | icons by <a href="https://icons8.com/" target="_blank">icons8</a></p>
-    </footer>
+    </div>
+    <div class="title-nav-icon">
+        <div class="page-title">
+            <h1>portfolio</h1>
+        </div>
+        <div class="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="nav" class="nav">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/projects.html">Portfolio</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <button id="dark-mode-toggle">turn off the lights</button>
+        <button id="font-toggle">dyslexic</button>
+        <div class="social-media-icons" style="border-top: 1px solid #000;">
+            <a href="mailto:sodipepaul@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/so-dipe/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://medium.com/@sodipepaul"><i class="fab fa-medium"></i></a>
+            <a href="https://www.kaggle.com/sodipepaul"><i class="fab fa-kaggle"></i></a>
+            <a href="https://open.spotify.com/user/ja9kmd6xq9k8j8kqu716vmsug"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.codewars.com/users/so-dipe"><i class="fa fa-code"></i></a>
+            <a href="https://github.com/so-dipe"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/_sodipe"><i class="fab fa-twitter"></i></a>
+            <a href="https://sodipe.substack.com/"><i class="fas fa-envelope-open-text"></i></a>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/about.js"></script>
 </body>
-
 </html>
