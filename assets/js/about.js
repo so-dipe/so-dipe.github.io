@@ -4,7 +4,6 @@ const texts = [
     "data scientist.",
     "billie eilish stan.",
     "chess player.",
-    "twitter shitposter.",
     "wiki editor.",
     "occasional blogger.",
 ]; 
